@@ -9,7 +9,7 @@ let PORT = process.env.PORT || 8080;
 
 //Router
 //require("./routes/apiRoutes")(app);
-//require("./routes/htmlRoutes")(app);
+require("./routing/htmlRoutes")(app);
 
 
 //Listner
