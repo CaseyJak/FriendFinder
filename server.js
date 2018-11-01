@@ -6,10 +6,13 @@ let app = express();
 //Initial PORT Set-Up
 let PORT = process.env.PORT || 8080;
 
+//Data Parsing???
+app.use(express.urlencoded({ extended:false}));
+app.use(express.json());
 
 //Router
-//require("./routes/apiRoutes")(app);
-require("./routing/htmlRoutes")(app);
+//require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 
 //Listner
